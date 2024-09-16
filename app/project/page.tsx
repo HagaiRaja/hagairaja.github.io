@@ -1,14 +1,15 @@
-import { BlogPosts } from 'app/components/posts'
+import { ProjectPosts } from 'app/components/projects'
 
 export const metadata = {
-  title: 'Blog',
-  description: 'Read my blog.',
+  title: 'Projects',
+  description: 'Find out my successful projects.',
 }
 
 export default function Page() {
   return (
     <section>
-      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My Blog</h1>
+      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My Projects</h1>
+
       <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
         <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">
           2021-09-XX
@@ -17,7 +18,7 @@ export default function Page() {
           Coming soon!
         </p>
       </div>
-      {/* <BlogPosts /> */}
+      {/* <ProjectPosts /> */}
     </section>
   )
 }
