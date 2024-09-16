@@ -1,13 +1,22 @@
+import { FlipWords } from "app/components/ui/flip-words";
+
 export default function Page() {
+
+  const greetings = ["Horas, Mejuah-juah!", "Hi, Welcome!", "안녕하세요, 환영합니다!", "¡Hola, bienvenido!", "Ciao, benvenuto!"];
+
   return (
     <div className="container grid grid-cols-1 md:grid-cols-3 items-center justify-center">
-      <div className="col-span-1">
-        <img src="/assets/hagai-london.jpg" alt="Hagai in London" className="image max-w-full" />
+      <div className="col-span-1 relative">
+        <img 
+          src={`/assets/hagai-london.jpg`} 
+          alt="Hagai in London" 
+          className="image max-w-full"
+        />
       </div>
       <div className="col-span-2">
         <section className="md:ml-8 mt-8 md:mt-2">
           <h1 className="text-3xl font-semibold tracking-tighter font-mono">
-            Horas, Mejuah-juah! 👋
+          🙋‍♂️ <FlipWords words={greetings} duration={1500}/>
           </h1>
           <h2 className="mb-4 text-xl tracking-tighter font-mono">
             I’m <span className="font-bold">Hagai,</span> an AI Engineer based in London, UK 🇬🇧

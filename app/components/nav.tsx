@@ -1,9 +1,6 @@
 import Link from 'next/link'
 
 const navItems = {
-  '/': {
-    name: 'CV',
-  },
   '/blog': {
     name: 'Blog',
   },
@@ -23,6 +20,15 @@ export function Navbar() {
           <span className="text-2xl font-semibold ml-2 hidden md:inline">Hagai Raja Sinulingga</span>
         </Link>
         <div className="flex flex-row space-x-0 pr-10">
+            <Link
+            href={"https://drive.google.com/file/d/1fH81GLCmiwMeES-a1SgnSsZYwsUbXWUE"}
+            className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            CV
+            </Link>
+
           {Object.entries(navItems).map(([path, { name }]) => {
           return (
             <Link
