@@ -15,8 +15,8 @@ export default function Page() {
       </div>
       <div className="col-span-2">
         <section className="md:ml-8 mt-8 md:mt-2">
-          <h1 className="text-3xl font-semibold tracking-tighter font-mono">
-          🙋‍♂️ <FlipWords words={greetings} duration={1500}/>
+          <h1 className="text-3xl font-semibold tracking-tighter font-mono mb-4 md:mb-2">
+          🙋‍♂️<FlipWords words={greetings} duration={1500}/>
           </h1>
           <h2 className="mb-4 text-xl tracking-tighter font-mono">
             I’m <span className="font-bold">Hagai,</span> an AI Engineer based in London, UK 🇬🇧
