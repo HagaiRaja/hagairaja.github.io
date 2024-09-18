@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { FlipWords } from "app/components/ui/flip-words";
+import BeforeAfterSlider from 'react-before-after-slider-component';
+import 'react-before-after-slider-component/dist/build.css';
 
 export default function Page() {
   const greetingsPC = ["Horas, Mejuah-juah!", "안녕하세요, 환영합니다!", "¡Hola, Bienvenido!", "您好，欢迎光临!","Halo, Selamat Datang!", "Ciao, Benvenuto!", "こんにちは、ようこそ!", "Hi, Welcome!"];
@@ -33,9 +35,10 @@ export default function Page() {
   return (
     <div className="container grid grid-cols-1 md:grid-cols-3 items-center justify-center">
       <div className="col-span-1 relative">
-        <img 
-          src={`/assets/hagai-london.jpg`} 
-          alt="Hagai in London" 
+        <BeforeAfterSlider
+          firstImage={{ imageUrl: '/assets/hagai-london-before.webp' }}
+          secondImage={{ imageUrl: '/assets/hagai-london-after.jpg' }}
+          currentPercentPosition={1}
           className="image max-w-full"
         />
       </div>
