@@ -38,7 +38,7 @@ export default function Page() {
         <BeforeAfterSlider
           firstImage={{ imageUrl: '/assets/hagai-london-before.webp' }}
           secondImage={{ imageUrl: '/assets/hagai-london-after.jpg' }}
-          currentPercentPosition={1}
+          currentPercentPosition={10}
           className="image max-w-full"
         />
       </div>
