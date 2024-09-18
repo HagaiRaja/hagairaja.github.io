@@ -1,8 +1,34 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { FlipWords } from "app/components/ui/flip-words";
 
 export default function Page() {
+  const greetingsPC = ["Horas, Mejuah-juah!", "안녕하세요, 환영합니다!", "¡Hola, Bienvenido!", "您好，欢迎光临!","Halo, Selamat Datang!", "Ciao, Benvenuto!", "こんにちは、ようこそ!", "Hi, Welcome!"];
+  const greetingsPhone = ["Mejuah-juah!", "안녕하세요!", "¡BIENVENIDO!", "欢迎!", "Selamat Datang!", "Benvenuto!", "いらっしゃいませ!", "Welcome!"];
 
-  const greetings = ["Horas, Mejuah-juah!", "Hi, Welcome!", "안녕하세요, 환영합니다!", "¡Hola, bienvenido!", "Ciao, benvenuto!"];
+  const getDeviceType = () => {
+    const ua = navigator.userAgent;
+    if (/tablet|ipad|playbook|silk/i.test(ua)) {
+      return "tablet";
+    }
+    if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+      return "phone";
+    }
+    return "pc";
+  };
+
+  const [greetings, setGreetings] = useState(["Hi, Welcome!"]);
+
+  useEffect(() => {
+    const deviceType = getDeviceType();
+    console.log("deviceType", deviceType);
+    if (deviceType === "phone") {
+      setGreetings(greetingsPhone);
+    } else {
+      setGreetings(greetingsPC);
+    }
+  }, []);
 
   return (
     <div className="container grid grid-cols-1 md:grid-cols-3 items-center justify-center">
