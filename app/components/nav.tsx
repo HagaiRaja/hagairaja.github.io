@@ -12,7 +12,7 @@ const navItems = {
 export function Navbar() {
   return (
     <nav
-      className="relative top-0 p-4 lg:p-8 flex items-center justify-center bg-gray-100 dark:bg-slate-800"
+      className="relative top-0 p-4 lg:p-8 flex items-center justify-center bg-slate-800"
     >
       <div className="flex flex-row justify-between w-full max-w-5xl">
         <Link href="/" className="flex items-center">
@@ -22,7 +22,7 @@ export function Navbar() {
         <div className="flex flex-row space-x-0 pr-10">
             <Link
             href={"https://drive.google.com/file/d/1fH81GLCmiwMeES-a1SgnSsZYwsUbXWUE"}
-            className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+            className="transition-all hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
             target="_blank"
             rel="noopener noreferrer"
             >
@@ -34,7 +34,7 @@ export function Navbar() {
             <Link
             key={path}
             href={path}
-            className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+            className="transition-al hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
             >
             {name}
             </Link>

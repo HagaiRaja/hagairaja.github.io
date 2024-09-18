@@ -11,10 +11,10 @@ export default function Page() {
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My Projects</h1>
 
       <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-        <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">
+        <p className="text-neutral-400 w-[100px] tabular-nums">
           2021-09-XX
         </p>
-        <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
+        <p className="text-neutral-100 tracking-tight">
           Coming soon!
         </p>
       </div>
