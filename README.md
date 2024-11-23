@@ -1,6 +1,6 @@
 # Portofolio & Blog of Hagai
 
-This website will be my one stop portofolio to keep track of my career progress.
+This website will be my one stop portfolio to keep track of my career progress.
 Work in progress :)
 
 ## Always live!

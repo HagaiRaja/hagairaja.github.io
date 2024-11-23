@@ -30,12 +30,12 @@ export function Navbar() {
             </Link>
 
             <Link
-            href={"https://tested-death-7a3.notion.site/Welcome-to-Hagai-s-Portofolio-52252508e9704107ac233b8ac6e30011"}
+            href={"https://tested-death-7a3.notion.site/Welcome-to-Hagai-s-Portfolio-52252508e9704107ac233b8ac6e30011"}
             className="transition-all hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
             target="_blank"
             rel="noopener noreferrer"
             >
-            Portofolio
+            Portfolio
             </Link>
 
           {/* {Object.entries(navItems).map(([path, { name }]) => {
