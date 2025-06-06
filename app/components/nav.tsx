@@ -21,7 +21,7 @@ export function Navbar() {
         </Link>
         <div className="flex flex-row space-x-0 pr-10">
             <Link
-            href={"https://drive.google.com/file/d/1fH81GLCmiwMeES-a1SgnSsZYwsUbXWUE"}
+            href={"https://docs.google.com/document/d/1PAnb7E2UbHvO4xNhsdhI4HNgPG7Wxp8RpyCimj7Tvdk"}
             className="transition-all hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
             target="_blank"
             rel="noopener noreferrer"
